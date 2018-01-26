@@ -18,6 +18,14 @@ const server = require('http').createServer((req, res) => {
             .pipe(res)
           break
 
+        case '/style.css':
+          res.setHeader('Content-Encoding', 'gzip')
+          res.writeHead(200, {'Content-Type': 'text/css; charset=UTF-8'})
+          fs.createReadStream(path.join(__dirname, 'style.css'))
+            .pipe(zlib.createGzip())
+            .pipe(res)
+          break
+
         default: res.end()
       } break
 
