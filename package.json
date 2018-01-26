@@ -1,0 +1,36 @@
+{
+  "name": "squares",
+  "version": "0.0.0",
+  "private": true,
+  "description": "is a websocket demo",
+  "scripts": {
+    "lint": "standa",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fibo/squares.git"
+  },
+  "keywords": [
+    "creative",
+    "demo"
+  ],
+  "author": "Gianluca Casati (http://g14n.info)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fibo/squares/issues"
+  },
+  "homepage": "https://github.com/fibo/squares#readme",
+  "devDependencies": {
+    "dot-editorconfig": "^1.1.0",
+    "pre-commit": "^1.2.2",
+    "standa": "^1.2.0"
+  },
+  "dependencies": {
+    "internal-ip": "^3.0.1",
+    "opn": "^5.2.0"
+  }
+}
