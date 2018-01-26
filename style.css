@@ -11,22 +11,32 @@ body {
 }
 
 .box {
-  background-color: #444;
-  color: #fff;
   border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: darkslategray;
+  background-color: darkslategray;
+  color: white;
   padding: 20px;
   font-size: 150%;
+  user-select: none;
 }
 
-.a {
+.box--locked {
+  background-color: ghostwhite;
+  color: black;
+}
+
+.box--selected {
+  background-color: gold;
+  border-color: darkslategray;
+  color: black;
+}
+
+.u2 {
   grid-column: auto / span 2;
 }
 
-.g {
-  grid-column: auto / span 2;
-  grid-row: auto / span 2;
-}
-
-.i {
+.u3 {
   grid-column: auto / span 3;
 }

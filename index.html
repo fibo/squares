@@ -10,18 +10,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="style.css">
+
+    <script src="/socket.io/socket.io.js"></script>
   </head>
   <body>
+    <nav><ul><li class="num-users">0</li></ul></nav>
     <div class="wrapper">
-      <div class="box a">A</div>
-      <div class="box b">B</div>
-      <div class="box c">C</div>
-      <div class="box d">D</div>
-      <div class="box e">E</div>
-      <div class="box f">F</div>
-      <div class="box g">G</div>
-      <div class="box h">H</div>
-      <div class="box i">I</div>
+      <div id="a" class="box u2" data-action="log">A</div>
+      <div id="b" class="box" data-action="log">B</div>
+      <div id="c" class="box" data-action="log">C</div>
+      <div id="d" class="box" data-action="log">D</div>
+      <div id="e" class="box" data-action="log">E</div>
+      <div id="i" class="box u3" data-action="log">I</div>
+      <div id="f" class="box" data-action="log">F</div>
+      <div id="g" class="box" data-action="log">G</div>
+      <div id="h" class="box" data-action="log">H</div>
     </div>
+
+    <script src="/client.js"></script>
   </body>
 </html>
